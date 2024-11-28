@@ -1,0 +1,15 @@
+/*border judul*/
+.section-title {
+    background-image: url('https://smkn4bogor.sch.id/assets/images/background/smkn4bogor_2.jpg');
+    /* Ganti dengan path gambar yang sesuai */
+    background-size: cover;
+    /* Mengisi seluruh area */
+    background-position: center;
+    /* Memusatkan gambar */
+    padding: 50px 0;
+    /* Padding untuk memberikan ruang di atas dan bawah */
+    color: white;
+    /* Warna teks judul */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Bayangan teks untuk keterbacaan */
+}

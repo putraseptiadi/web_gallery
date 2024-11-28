@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://smkn4bogor.sch.id/assets/images/background/smkn4bogor_2.jpg');
+    /* Ganti dengan path ke gambar wallpaper Anda */
+    background-size: cover;
+    /* Agar gambar menutupi seluruh area */
+    background-position: center;
+    /* Memusatkan gambar */
+    background-repeat: no-repeat;
+    /* Menghindari pengulangan gambar */
+}
+
+
+.login-container {
+    display: flex;
+    width: 850px;
+    height: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+}
+
+
+/* Style for the link around logo and text */
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #01579b;
+    transition: color 0.3s ease;
+}
+
+/* Text style */
+.logo-link h2 {
+    font-size: 18px;
+    color: #01579b;
+    margin-left: 2px;
+    transition: color 0.3s ease;
+}
+
+.logo-link:hover h2 {
+    color: #0288d1;
+    /* Changes the text color */
+}
+
+.logo-link:hover {
+    color: #0288d1;
+    /* Changes the link color on hover */
+}
+
+.login-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.left-section {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.logo {
+    width: 70px;
+    margin-right: 15px;
+}
+
+.logo-container h2 {
+    font-size: 22px;
+    color: #01579b;
+    font-weight: bold;
+}
+
+.illustration {
+    width: 250px;
+    margin-top: 20px;
+    opacity: 0.9;
+}
+
+.right-section {
+    flex: 1;
+    background: linear-gradient(135deg, #0288d1, #0277bd);
+    /* Gradien biru */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 40px;
+    position: relative;
+}
+
+.right-section h2 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #bbdefb;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e3f2fd;
+    color: #01579b;
+    outline: none;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.input-group input:focus {
+    box-shadow: 0 0 10px rgba(2, 136, 209, 0.5);
+    transform: scale(1.01);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.options a {
+    color: #bbdefb;
+    text-decoration: underline;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.options a:hover {
+    color: #e1f5fe;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #01579b;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #014a8c;
+    transform: scale(1.03);
+}
+
+.submit-button:active {
+    background-color: #0277bd;
+    transform: scale(0.98);
+}
+
+/* Additional styling for a modern, floating input label effect */
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label {
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    font-size: 12px;
+    color: #0288d1;
+    background-color: #ffffff;
+    padding: 0 5px;
+    transition: 0.2s ease;
+}

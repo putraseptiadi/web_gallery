@@ -1,0 +1,1186 @@
+/* Gaya untuk Navbar */
+.navbar {
+    background-color: white;
+    /* Latar belakang navbar */
+    padding: 10px 20px;
+    /* Padding untuk navbar */
+}
+
+/* Logo SMKN 4 */
+.logo-smkn4 {
+    width: 55px;
+    /* Lebar untuk logo SMKN 4 */
+    height: 65px;
+    /* Tinggi untuk logo SMKN 4 */
+    margin-right: 5px;
+    /* Jarak antara logo */
+}
+
+/* Garis pemisah antara logo */
+.separator {
+    border-left: 3px solid red;
+    /* Garis pemisah merah di sebelah kiri */
+    height: 65px;
+    /* Tinggi untuk garis pemisah */
+    display: inline-block;
+    /* Memungkinkan penggunaan margin dan perataan vertikal */
+    vertical-align: middle;
+    /* Menyelaraskan secara vertikal dengan logo */
+    margin-right: 5px;
+    /* Jarak antara garis pemisah dan logo SMK BISA */
+}
+
+/* Logo SMK BISA */
+.logo-smk-bisa {
+    width: 160px;
+    /* Lebar untuk logo SMK BISA */
+    height: 50px;
+    /* Tinggi untuk logo SMK BISA */
+    vertical-align: middle;
+    /* Menyelaraskan secara vertikal */
+}
+
+
+
+/* Gaya untuk tautan di navbar */
+.navbar-nav .nav-item .nav-link {
+    color: #000000;
+    /* Warna default untuk tautan */
+    transition: color 0.3s ease;
+    /* Efek transisi untuk perubahan warna */
+    text-decoration: none;
+    /* Menghilangkan garis bawah pada tautan */
+    font-weight: bold;
+    margin: 0 6px;
+    /* Jarak horizontal antara tautan (6px di kiri dan kanan) */
+}
+
+/* Gaya untuk tautan aktif */
+.navbar-nav .nav-item .nav-link.active {
+    color: blue;
+    /* Warna biru untuk tautan aktif */
+    font-weight: bold;
+    /* Menebalkan teks tautan aktif */
+}
+
+/* Gaya untuk item dropdown yang aktif */
+.nav-item .dropdown-item.active {
+    font-weight: bold;
+    /* Menebalkan teks tautan aktif */
+    color: blue;
+    /* Warna teks aktif */
+    background-color: white;
+    /* Warna latar untuk item aktif */
+}
+
+/* Gaya dropdown */
+.nav-item .dropdown-menu {
+    background-color: white;
+    /* Warna latar dropdown */
+    border: none;
+    /* Menghilangkan garis border */
+    padding: 0;
+    /* Padding untuk dropdown */
+    display: none;
+    /* Menyembunyikan dropdown secara default */
+    position: absolute;
+    /* Menempatkan dropdown secara absolut */
+    z-index: 1000;
+    /* Memastikan dropdown muncul di atas elemen lainnya */
+    border-bottom: 2px solid #0a0e11;
+    /* Garis bawah yang menambah daya tarik */
+}
+
+/* Menampilkan dropdown saat hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    /* Menampilkan dropdown saat hover */
+}
+
+/* Gaya untuk item dropdown */
+.nav-item .dropdown-item {
+    color: black;
+    /* Warna teks dropdown */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transisi untuk perubahan warna */
+    padding: 10px 15px;
+    /* Padding untuk item dropdown */
+}
+
+/* Efek hover untuk item dropdown */
+.nav-item .dropdown-item:hover {
+    background-color: rgb(219, 223, 228);
+    /* Warna latar belakang saat hover */
+}
+
+/* login */
+.nav-item a.login {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #1e90ff;
+    /* Warna biru kekinian */
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Bayangan untuk efek elevasi */
+}
+
+.nav-item a.login:hover {
+    background-color: #1c86ee;
+    /* Biru lebih gelap saat hover */
+    transform: translateY(-3px);
+    /* Efek tombol sedikit terangkat */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    /* Memperbesar bayangan saat hover */
+}
+
+.nav-item a.login:active {
+    transform: translateY(0);
+    /* Kembali ke posisi semula saat ditekan */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Bayangan kembali ke posisi semula */
+}
+
+/* akhir navbar */
+
+
+
+/*  slide */
+
+.slide-bg {
+    position: relative;
+    overflow: hidden;
+    background-image: url('https://i.pinimg.com/564x/48/e8/e0/48e8e00b7c2d6d83b44f99c677e76938.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: backgroundAnimationslide 15s infinite alternate;
+}
+
+@keyframes backgroundAnimationslide {
+    0% {
+        background-position: center;
+    }
+
+    100% {
+        background-position: top left;
+        /* Mengubah posisi gambar selama animasi */
+    }
+}
+
+/* Style untuk link di dalam carousel */
+.slide-bg a {
+    color: white;
+    /* Warna awal link */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* Ukuran font yang lebih besar */
+    position: relative;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    text-transform: uppercase;
+    /* Mengubah huruf menjadi kapital */
+}
+
+/* Efek hover untuk link */
+.slide-bg a:hover {
+    color: #3498db;
+    /* Mengubah warna link menjadi biru saat hover */
+    text-shadow: 0px 0px 10px rgba(52, 152, 219, 0.8), 0px 0px 20px rgba(52, 152, 219, 0.6);
+    /* Menambahkan efek glow biru saat hover */
+}
+
+/* Efek underline animasi */
+.slide-bg a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    /* Garis berada sedikit di bawah teks */
+    height: 3px;
+    /* Tebal garis bawah */
+    width: 0;
+    background-color: #3498db;
+    /* Warna biru untuk underline */
+    transition: width 0.4s ease-in-out;
+}
+
+/* Saat hover, garis bawah melebar */
+.slide-bg a:hover::after {
+    width: 100%;
+}
+
+
+/* Animasi tambahan agar link muncul dari opacity 0 */
+.animate-text.slide a {
+    animation: fadeIn 1.2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Menambahkan overlay transparan */
+.slide-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Lapisan transparan hitam (50% opacity) */
+    z-index: 1;
+}
+
+/* Konten di atas slide-bg */
+.slide-bg>* {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/* Menghilangkan delay dan membuat animasi lebih halus */
+.animate-text.slide {
+    animation: slideInFromBottom 1.2s ease-in-out forwards;
+    /* Durasi animasi 1.2 detik dan menggunakan easing function yang halus */
+    color: white;
+    text-shadow: 2px 2px 4px #080c0b;
+}
+
+/* Animasi slide in dari bawah */
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Menerapkan animasi pada elemen */
+.animate-text.img {
+    animation: slideInFromRight 1.2s ease-in-out forwards;
+    /* Durasi animasi 1.2 detik, dengan easing halus */
+}
+
+
+/* Animasi slide in dari kanan */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.carousel-item img {
+    transition: transform 0.6s ease-in-out, filter 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.04);
+    /* Perbesar gambar sedikit lebih besar */
+    filter: brightness(1.2);
+    /* Tambah kecerahan */
+
+}
+
+
+
+
+/* indikator slideshow */
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    /* Posisi indikator di bagian bawah */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Mengatur agar indikator berada di tengah */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* Jarak antar indikator */
+}
+
+.carousel-indicators button {
+    width: 12px;
+    /* Lebar indikator */
+    height: 12px;
+    /* Tinggi indikator */
+    border-radius: 50%;
+    /* Membuat indikator berbentuk bulat */
+    border: none;
+    /* Menghilangkan border */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Warna latar belakang indikator */
+    opacity: 0.5;
+    /* Transparansi */
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    /* Transisi halus */
+}
+
+.carousel-indicators button.active {
+    background-color: #fff;
+    /* Warna indikator aktif */
+    opacity: 1;
+    /* Indikator aktif menjadi sepenuhnya terlihat */
+}
+
+/* Menambahkan efek hover */
+.carousel-indicators button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Warna saat hover */
+    opacity: 1;
+    /* Indikator menjadi sepenuhnya terlihat saat hover */
+}
+
+/* akhir slideshow */
+
+
+/* profile dan berita */
+.profile {
+    margin-top: 4rem;
+    padding: 0 50px;
+    /* Menambahkan padding pada kontainer profil */
+}
+
+.profile-title {
+    font-size: 2rem;
+    /* Ukuran font yang lebih besar */
+    font-weight: bold;
+    /* Membuat teks menjadi tebal */
+    color: #2980b9;
+    /* Warna biru yang menarik */
+    text-align: center;
+    /* Menyusun teks di tengah */
+    text-transform: uppercase;
+    /* Mengubah teks menjadi huruf kapital */
+    letter-spacing: 1px;
+    /* Jarak antar huruf */
+    margin-bottom: 1rem;
+    /* Jarak bawah untuk spasi dengan elemen di bawah */
+    border-bottom: 2px solid #3498db;
+    /* Garis bawah yang menambah daya tarik */
+    padding-bottom: 0.5rem;
+    /* Jarak antara teks dan garis bawah */
+    transition: color 0.3s ease;
+    /* Efek transisi untuk perubahan warna */
+}
+
+.profile-title:hover {
+    color: #f39c12;
+    /* Mengubah warna saat hover */
+    cursor: pointer;
+    /* Mengubah kursor saat hover */
+}
+
+.profile-custom-video {
+    margin-top: 1rem;
+    /* Jarak atas untuk video */
+    max-width: 100%;
+    /* Membuat video responsif */
+    height: auto;
+    /* Menjaga rasio aspek video */
+}
+
+.profile-custom-video iframe {
+    width: 500px;
+    /* Mengatur lebar iframe untuk menyesuaikan dengan lebar kontainer */
+    height: 250px;
+    /* Mengatur tinggi iframe, bisa disesuaikan */
+    border: none;
+    /* Menghilangkan border default pada iframe */
+}
+
+.profile-description {
+    padding: 0;
+    /* Mengatur padding kiri dan kanan pada deskripsi */
+    font-size: 0.9rem;
+    /* Mengatur ukuran font deskripsi, bisa disesuaikan */
+}
+
+.table {
+    width: 100%;
+    /* Mengatur lebar tabel */
+}
+
+.profile-list-group-item {
+    margin-top: 2rem;
+    /* Atur jarak atas untuk item berita */
+}
+
+.profile-img {
+    width: 150px;
+    /* Atur lebar gambar untuk semua berita */
+    height: auto;
+    /* Menjaga rasio aspek gambar */
+}
+
+.profile-link {
+    color: #3498db;
+    /* Warna link */
+    text-decoration: none;
+    /* Menghilangkan garis bawah */
+    font-weight: 700;
+    /* Menebalkan font */
+    transition: all 0.3s ease;
+    /* Transisi semua efek */
+}
+
+.profile-link:hover {
+    color: #f39c12;
+    /* Warna saat hover */
+    text-decoration: underline;
+    /* Garis bawah saat hover */
+    text-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+    /* Bayangan teks saat hover */
+}
+
+
+.profile-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    color: white;
+    /* Warna teks */
+    background: linear-gradient(-45deg, #4facfe, #00f2fe, #00c6ff, #0072ff);
+    background-size: 400% 400%;
+    animation: bgbuttonberita 5s ease infinite;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 50%;
+    margin-top: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.2rem;
+    /* Ukuran font lebih besar */
+    font-weight: 700;
+    /* Menggunakan font bold */
+    text-transform: uppercase;
+    /* Mengubah teks menjadi huruf kapital */
+}
+
+/* Animasi gerakan gradien/ Gaya slideshow */
+@keyframes bgbuttonberita {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.profile-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* Akhir profile dan berita */
+
+
+/* Prakata */
+
+.prakata-section {
+    margin-top: 5rem;
+    position: relative;
+    overflow: hidden;
+    background-image: url('https://i.pinimg.com/originals/1c/93/4e/1c934e4dd6ee7f521b2ebf89c23077c4.jpg');
+    /* Ganti dengan gambar latar belakang */
+    background-size: cover;
+    /* Menyesuaikan gambar dengan ukuran container */
+    background-position: center;
+    /* Memusatkan gambar */
+    animation: backgroundAnimation 15s infinite alternate;
+    /* Efek animasi latar belakang */
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: center;
+    }
+
+    100% {
+        background-position: top left;
+        /* Mengubah posisi gambar selama animasi */
+    }
+}
+
+.prakata-content {
+    flex: 1;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 4px #629584;
+
+}
+
+.prakata-image-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+
+.prakata-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+
+    transition: transform 0.3s;
+}
+
+.prakata-text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.prakata-text-container:hover {
+    transform: scale(1.05);
+    /* Zoom halus sedikit lebih besar */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    /* Menambahkan bayangan saat hover */
+}
+
+.title {
+    margin-bottom: 1rem;
+}
+
+.prakatanya {
+    transition: color 0.1s;
+    color: white;
+    text-shadow: 2px 2px 4px #629584;
+}
+
+/* Akhir prakata */
+
+/* Guru & Karyawan */
+
+.guru-title {
+    font-size: 2rem;
+    /* Ukuran font yang lebih besar */
+    font-weight: bold;
+    /* Membuat teks menjadi tebal */
+    color: #2980b9;
+    /* Warna biru yang menarik */
+    text-align: center;
+    /* Menyusun teks di tengah */
+    text-transform: uppercase;
+    /* Mengubah teks menjadi huruf kapital */
+    letter-spacing: 1px;
+    /* Jarak antar huruf */
+    margin-bottom: 1rem;
+    /* Jarak bawah untuk spasi dengan elemen di bawah */
+    border-bottom: 2px solid #3498db;
+    /* Garis bawah yang menambah daya tarik */
+    padding-bottom: 0.5rem;
+    /* Jarak antara teks dan garis bawah */
+    transition: color 0.3s ease;
+    /* Efek transisi untuk perubahan warna */
+    margin-top: 3rem;
+}
+
+.guru-title:hover {
+    color: #f39c12;
+    /* Mengubah warna saat hover */
+    cursor: pointer;
+    /* Mengubah kursor saat hover */
+}
+
+.guru-section {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    /* Tambahkan padding di sekitar section */
+    background-color: #f9f9f9;
+    /* Warna latar belakang untuk section */
+    border-radius: 10px;
+    /* Sudut membulat untuk section */
+}
+
+.carousel-container {
+    width: 100%;
+    display: flex;
+    animation: animasiguru 15s infinite;
+    /* Durasi dan berulang */
+}
+
+.guru-grid {
+    display: flex;
+    min-width: 100%;
+    /* Pastikan lebar grid memenuhi kontainer */
+}
+
+.guru-card {
+    flex: 0 0 15%;
+    /* Setiap kartu mengambil 15% dari lebar */
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 20px;
+    /* Sudut membulat yang lebih besar */
+    margin: 10px;
+    /* Jarak antara setiap kartu */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Efek transisi saat hover */
+    text-align: center;
+    /* Menyusun teks di tengah */
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    /* Warna latar belakang dengan gradien */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    /* Bayangan untuk kartu */
+}
+
+.guru-card img {
+    width: 210px;
+    /* Ukuran lebar gambar */
+    height: 230px;
+    /* Ukuran tinggi gambar */
+    border-radius: 15px;
+    /* Sudut membulat pada gambar */
+    object-fit: cover;
+    /* Memastikan gambar tidak terdistorsi */
+}
+
+.name-container {
+    background-color: rgba(41, 128, 185, 0.9);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 60px;
+    /* Tinggi tetap untuk semua nama */
+    display: flex;
+    /* Mengatur display ke flex */
+    align-items: center;
+    /* Menyusun teks di tengah secara vertikal */
+    justify-content: center;
+    /* Menyusun teks di tengah secara horizontal */
+}
+
+
+
+/* Animasi untuk slide */
+@keyframes animasiguru {
+    0% {
+        transform: translateX(0);
+    }
+
+    16.66% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-25%);
+    }
+
+    36.66% {
+        transform: translateX(-25%);
+    }
+
+    40% {
+        transform: translateX(-50%);
+    }
+
+    56.66% {
+        transform: translateX(-50%);
+    }
+
+    60% {
+        transform: translateX(-75%);
+    }
+
+
+}
+
+.name-container h3 {
+    font-size: 20px;
+    /* Ukuran font untuk nama */
+    margin: 0;
+    /* Menghilangkan margin untuk konsistensi */
+    font-weight: 700;
+    /* Menebalkan font */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    /* Efek bayangan pada teks */
+}
+
+/* Aturan untuk responsive */
+@media (max-width: 600px) {
+    .guru-grid {
+        flex-direction: column;
+        /* Mengubah menjadi kolom pada layar kecil */
+    }
+
+    .guru-card {
+        flex: 0 0 100%;
+        /* Kartu mengisi lebar penuh pada layar kecil */
+    }
+}
+
+/* Efek hover untuk kartu */
+.guru-card:hover {
+    transform: scale(1.05);
+    /* Membesar sedikit saat dihover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    /* Menambah bayangan saat dihover */
+}
+
+.guru-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    /* Padding yang lebih baik */
+    color: white;
+    /* Warna teks */
+    background: linear-gradient(-45deg, #4facfe, #00f2fe, #00c6ff, #0072ff);
+    background-size: 400% 400%;
+    animation: bgbuttonguru 5s ease infinite;
+    /* Animasi gradien */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* Bayangan tombol */
+    border: none;
+    /* Menghilangkan border default tombol */
+    border-radius: 50%;
+    /* Memberikan lengkungan lembut pada tombol */
+    text-decoration: none;
+    /* Menghilangkan garis bawah */
+    cursor: pointer;
+    /* Mengubah kursor saat hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transisi saat hover */
+    max-width: 250px;
+    /* Atur lebar maksimum tombol */
+    width: 100%;
+    /* Membuat tombol mengisi lebar maksimum yang ditetapkan */
+    margin-left: auto;
+    /* Mendorong tombol ke sebelah kanan */
+    font-size: 1.2rem;
+    /* Ukuran font lebih besar */
+    font-weight: 700;
+    /* Menggunakan font bold */
+    text-transform: uppercase;
+    /* Mengubah teks menjadi huruf kapital */
+}
+
+/* Animasi gerakan gradien/ Gaya slideshow */
+@keyframes bgbuttonguru {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.guru-btn:hover {
+    transform: translateY(-2px);
+    /* Efek mengangkat saat hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    /* Meningkatkan bayangan saat hover */
+}
+
+
+/* Akhir Guru*/
+
+
+
+/* Agenda dan informasi terkini */
+.agenda {
+    margin-top: 2rem;
+    padding: 0 50px;
+    /* Menambahkan padding pada kontainer profil */
+}
+
+.agenda-title {
+    font-size: 2rem;
+    /* Ukuran font yang lebih besar */
+    font-weight: bold;
+    /* Membuat teks menjadi tebal */
+    color: #2980b9;
+    /* Warna biru yang menarik */
+    text-align: center;
+    /* Menyusun teks di tengah */
+    text-transform: uppercase;
+    /* Mengubah teks menjadi huruf kapital */
+    letter-spacing: 1px;
+    /* Jarak antar huruf */
+    margin-bottom: 2rem;
+    /* Jarak bawah untuk spasi dengan elemen di bawah */
+    border-bottom: 2px solid #3498db;
+    /* Garis bawah yang menambah daya tarik */
+    padding-bottom: 0.5rem;
+    /* Jarak antara teks dan garis bawah */
+    transition: color 0.3s ease;
+    /* Efek transisi untuk perubahan warna */
+}
+
+.agenda-title:hover {
+    color: #f39c12;
+    /* Mengubah warna saat hover */
+    cursor: pointer;
+    /* Mengubah kursor saat hover */
+}
+
+
+.agenda-img {
+    width: 150px;
+    /* Atur lebar gambar untuk semua berita */
+    height: auto;
+    /* Menjaga rasio aspek gambar */
+}
+
+.agenda-link {
+    color: #3498db;
+    /* Warna link */
+    text-decoration: none;
+    /* Menghilangkan garis bawah */
+    font-weight: 700;
+    /* Menebalkan font */
+    transition: all 0.3s ease;
+    /* Transisi semua efek */
+}
+
+.agenda-link:hover {
+    color: #f39c12;
+    /* Warna saat hover */
+    text-decoration: underline;
+    /* Garis bawah saat hover */
+    text-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+    /* Bayangan teks saat hover */
+}
+
+.agenda-card {
+    background-color: #f9f9f9;
+    /* Warna latar belakang kartu */
+    border-radius: 8px;
+    /* Sudut yang membulat */
+    padding: 1.5rem;
+    /* Padding dalam kartu */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* Bayangan lembut */
+}
+
+.agenda-item {
+    display: flex;
+    /* Mengatur item agar dalam satu baris */
+    margin-bottom: 1rem;
+    /* Jarak antar item */
+    padding: 1rem;
+    border-left: 4px solid #2980b9;
+    /* Garis samping */
+    background: #ffffff;
+    /* Latar belakang putih */
+    border-radius: 4px;
+    /* Membulatkan sudut */
+    transition: transform 0.3s;
+    /* Efek transisi */
+}
+
+.agenda-item:hover {
+    transform: translateY(-2px);
+    /* Efek angkat saat hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Bayangan saat hover */
+}
+
+.agenda-date {
+    font-size: 1.5rem;
+    /* Ukuran font untuk tanggal */
+    font-weight: bold;
+    /* Menebalkan font */
+    color: #2980b9;
+    /* Warna untuk tanggal */
+    margin-right: 1rem;
+    /* Jarak ke elemen detail */
+    text-align: center;
+    /* Teks di tengah */
+    flex-shrink: 0;
+    /* Menghindari penyusutan */
+}
+
+.agenda-details {
+    flex-grow: 1;
+    /* Memungkinkan elemen ini tumbuh */
+}
+
+.agenda-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    /* Padding yang lebih baik */
+    color: white;
+    /* Warna teks */
+    background: linear-gradient(-45deg, #4facfe, #00f2fe, #00c6ff, #0072ff);
+    background-size: 400% 400%;
+    animation: bgbuttonagenda 5s ease infinite;
+    /* Animasi gradien */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* Bayangan tombol */
+    border: none;
+    /* Menghilangkan border default tombol */
+    border-radius: 50%;
+    /* Memberikan lengkungan lembut pada tombol */
+    text-decoration: none;
+    /* Menghilangkan garis bawah */
+    cursor: pointer;
+    /* Mengubah kursor saat hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transisi saat hover */
+    max-width: 250px;
+    /* Atur lebar maksimum tombol */
+    width: 100%;
+    /* Membuat tombol mengisi lebar maksimum yang ditetapkan */
+    margin-left: auto;
+    /* Mendorong tombol ke sebelah kanan */
+    font-size: 1.2rem;
+    /* Ukuran font lebih besar */
+    font-weight: 700;
+    /* Menggunakan font bold */
+    text-transform: uppercase;
+    /* Mengubah teks menjadi huruf kapital */
+}
+
+/* Animasi gerakan gradien/ Gaya slideshow */
+@keyframes bgbuttonagenda {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.agenda-btn:hover {
+    transform: translateY(-2px);
+    /* Efek mengangkat saat hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    /* Meningkatkan bayangan saat hover */
+}
+
+/* Akhir agenda dan infor*/
+
+
+/* Bagian peta */
+
+.peta_tentang_kami {
+    display: flex;
+    flex-wrap: wrap;
+    /* Membuat item bisa membungkus jika ruang tidak cukup */
+    border-collapse: collapse;
+    background: linear-gradient(-45deg, #4facfe, #00f2fe, #00c6ff, #0072ff);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* Bayangan lebih dalam */
+
+    overflow: hidden;
+    width: 100%;
+
+    padding: 20px;
+}
+
+.peta_tentang_kami td {
+    flex: 1;
+    vertical-align: top;
+    padding: 20px;
+    position: relative;
+
+}
+
+
+.peta_tentang_kami h2 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 2rem;
+    /* Ukuran font lebih besar */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Bayangan lebih tebal */
+}
+
+.peta_tentang_kami p {
+    line-height: 1.8;
+    /* Meningkatkan jarak antar baris */
+    color: #f0f0f0;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Bayangan lebih tebal */
+}
+
+.peta_tentang_kami iframe {
+
+    max-width: 350px;
+    /* Batas maksimum */
+    height: 250px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.peta_tentang_kami iframe:hover {
+    transform: scale(1.05);
+    /* Efek zoom lebih besar */
+}
+
+@media (max-width: 768px) {
+    .peta_tentang_kami {
+        flex-direction: column;
+        /* Mengatur kolom menjadi vertikal */
+    }
+
+    .peta_tentang_kami td {
+        width: 100%;
+        /* Setiap kolom mengambil 100% lebar */
+        display: block;
+        /* Kolom menjadi blok untuk tampilan vertikal */
+        margin-bottom: 20px;
+        /* Memberikan jarak antar kolom */
+        margin: 0;
+        /* Hapus margin pada tampilan vertikal */
+    }
+}
+
+.informasi-kontak {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.informasi-kontak h2 {
+    color: #fff;
+}
+
+.informasi-kontak p {
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.ig-link {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ig-link:hover {
+    color: #4facfe;
+}
+
+.ig-link i {
+    margin-right: 5px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/* Akhir peta */
+
+
+/* Footer Styles */
+.footer {
+    background-color: #34495e;
+    /* Warna latar belakang yang lebih gelap */
+    color: white;
+    padding: 10px 20px;
+    /* Menambahkan padding untuk ruang lebih */
+    font-family: 'Arial', sans-serif;
+    /* Menggunakan font yang lebih bersih */
+}
+
+.footer h5 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    /* Ukuran font lebih besar */
+    border-bottom: 2px solid #f0db4f;
+    /* Garis bawah untuk menambah fokus */
+    padding-bottom: 10px;
+    /* Ruang di bawah judul */
+}
+
+.footer p {
+    margin: 0;
+    line-height: 1.6;
+    /* Menambahkan jarak antar baris */
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 15px;
+    /* Jarak yang lebih besar antar item */
+}
+
+.footer ul li a {
+    color: #f0db4f;
+    /* Warna teks */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Transisi warna dan transformasi */
+}
+
+.footer ul li a:hover {
+    color: #e67e22;
+    /* Warna saat hover */
+    transform: translateY(-2px);
+    /* Efek angkat saat hover */
+}
+
+.footer .text-center {
+    margin-top: 30px;
+    /* Jarak yang lebih besar di atas teks tengah */
+    font-size: 0.9em;
+    /* Ukuran font lebih kecil untuk teks tambahan */
+    opacity: 0.8;
+    /* Menambahkan transparansi untuk teks tambahan */
+}

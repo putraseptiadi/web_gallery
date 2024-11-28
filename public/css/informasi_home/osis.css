@@ -1,0 +1,198 @@
+/* Section Utama */
+.program-info-section {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+/* Logo */
+.program-logo {
+    text-align: center;
+}
+
+.program-logo .logo-img {
+    max-width: 100%;
+    border: 3px solid #007bff;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Container untuk foto dengan efek hover */
+.program-leaders .leader-photo .img-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 140px;
+    /* Ukuran lebih besar agar lebih menonjol */
+    height: 140px;
+    border: 5px solid #007bff;
+    /* Warna border */
+    border-radius: 50%;
+    /* Membulat sempurna */
+    padding: 5px;
+    background: linear-gradient(135deg, #007bff, #6c757d);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efek hover untuk container foto */
+.program-leaders .leader-photo .img-container:hover {
+    transform: scale(1.1);
+    /* Zoom container */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Efek bayangan */
+}
+
+/* Gambar di dalam container */
+.program-leaders .leader-photo .img-container .ketua-img {
+    width: 100%;
+    /* Sesuaikan ke container */
+    height: 100%;
+    /* Sesuaikan ke container */
+    object-fit: cover;
+    /* Pastikan gambar proporsional */
+    border-radius: 50%;
+    /* Membulat */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Efek bayangan awal */
+}
+
+
+
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .program-leaders .img-container {
+        width: 90px;
+        height: 90px;
+        border-width: 3px;
+    }
+
+
+    .leader-details {
+        font-size: 0.9rem;
+    }
+}
+
+/* Title */
+.program-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    /* Ukuran lebih kecil */
+    font-weight: 600;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    /* Spasi tetap nyaman */
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #0056b3;
+    /* Garis lebih tipis */
+    display: inline-block;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.program-title:hover {
+    color: #0056b3;
+    /* Efek hover pada teks */
+    border-bottom: 2px solid #007bff;
+    /* Warna lebih cerah */
+}
+
+/* Text */
+.program-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    /* Ukuran lebih kecil */
+    color: #495057;
+    line-height: 1.6;
+    /* Spasi tetap nyaman */
+    text-align: justify;
+    /* Rata kiri-kanan untuk estetika profesional */
+    transition: color 0.3s ease-in-out;
+}
+
+.program-text:hover {
+    color: #343a40;
+    /* Warna lebih gelap saat hover */
+}
+
+/* Divider */
+.program-divider {
+    border: none;
+    border-top: 1.5px dashed #0056b3;
+    /* Lebih tipis */
+    margin: 1rem 0;
+    /* Jarak cukup */
+    width: 70%;
+    /* Lebar sedikit lebih kecil */
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.85;
+    /* Transparansi tetap lembut */
+}
+
+/* Info Ketua */
+.leader-info .leader-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    /* Ukuran lebih kecil */
+    font-weight: 600;
+    color: #0056b3;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    transition: color 0.3s ease-in-out;
+}
+
+.leader-info .leader-title:hover {
+    color: #007bff;
+    /* Warna cerah saat hover */
+}
+
+/* Detail Ketua */
+.leader-info .leader-details {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    /* Ukuran lebih kecil */
+    color: #495057;
+    line-height: 1.7;
+}
+
+.leader-info .leader-details strong {
+    color: #2c3e50;
+    font-weight: bold;
+    /* Penekanan tetap */
+}
+
+.leader-info .leader-details:hover strong {
+    color: #007bff;
+    /* Efek hover pada teks penting */
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .program-title {
+        font-size: 1.8rem;
+        /* Lebih kecil di layar kecil */
+        letter-spacing: 1px;
+    }
+
+    .program-text {
+        font-size: 0.9rem;
+        /* Lebih kecil untuk layar kecil */
+        line-height: 1.5;
+    }
+
+    .leader-info .leader-title {
+        font-size: 1.3rem;
+    }
+
+    .leader-info .leader-details {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,224 @@
+.program-info hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #1e88e5, #fff);
+    margin: 2rem 0;
+}
+
+/* General Styles for the Section */
+.program-info {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    border-radius: 8px;
+}
+
+.program-info h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.program-info p {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.program-info hr {
+    border-top: 2px solid #007bff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Styling for the Logo Section */
+.program-info .col-md-4 img {
+    border-radius: 8px;
+    border: 2px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for Ketua Program Keahlian Section */
+.program-info .row.align-items-center {
+    margin-top: 20px;
+}
+
+.program-info .col-md-3 img {
+    border-radius: 50%;
+    border: 4px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.program-info .col-md-3 img:hover {
+    transform: scale(1.1);
+}
+
+.program-info .col-md-9 h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.program-info .col-md-9 p {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .program-info .row {
+        text-align: center;
+    }
+
+    .program-info .col-md-3,
+    .program-info .col-md-9 {
+        margin-bottom: 20px;
+    }
+
+    .program-info .col-md-9 h3 {
+        font-size: 1.25rem;
+    }
+
+    .program-info .col-md-9 p {
+        font-size: 1rem;
+    }
+}
+
+/* =======================================
+   General Styling for Program Info Section
+   ======================================= */
+.program-info {
+    background-color: #f8f9fa;
+    /* Light background */
+    padding: 40px 0;
+    /* Vertical padding */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+/* =======================================
+   Title Styling (for Prestasi & Profesi)
+   ======================================= */
+.program-info h3 {
+    font-size: 1.5rem;
+    /* Font size */
+    font-weight: 600;
+    /* Bold title */
+    color: #007bff;
+    /* Blue color for the header */
+    margin-bottom: 20px;
+    /* Space below the header */
+    display: flex;
+    /* Flex to align the icon and text */
+    align-items: center;
+    /* Vertically center the items */
+}
+
+/* Icon Styling */
+.program-info h3 i {
+    margin-right: 10px;
+    /* Space between the icon and the text */
+}
+
+/* =======================================
+   List Styling for Items (Prestasi & Profesi)
+   ======================================= */
+.program-info ul {
+    list-style-type: none;
+    /* Remove default bullets */
+    padding-left: 0;
+    /* Remove padding on the left */
+    margin-bottom: 0;
+    /* Remove bottom margin */
+}
+
+/* List Item Styling */
+.program-info li {
+    font-size: 1.1rem;
+    /* Standard font size */
+    color: #343a40;
+    /* Dark grey color */
+    margin-bottom: 10px;
+    /* Space between list items */
+    padding-left: 20px;
+    /* Indentation for the list */
+    position: relative;
+    /* For positioning the custom bullet */
+    transition: color 0.3s ease, padding-left 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+/* Custom Bullet (before each list item) */
+.program-info li::before {
+    content: '';
+    /* Empty content for the bullet */
+    position: absolute;
+    /* Absolute positioning to place it */
+    left: 0;
+    /* Align to the left of the item */
+    top: 50%;
+    /* Vertically center the bullet */
+    transform: translateY(-50%);
+    /* Adjust to perfectly align the bullet */
+    width: 8px;
+    /* Bullet width */
+    height: 8px;
+    /* Bullet height */
+    background-color: #007bff;
+    /* Blue bullet */
+    border-radius: 50%;
+    /* Circular bullet */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for bullet color */
+}
+
+/* =======================================
+   Hover Effects for List Items
+   ======================================= */
+.program-info li:hover {
+    color: #007bff;
+    /* Change text color on hover */
+    padding-left: 30px;
+    /* Indentation increases on hover */
+}
+
+/* Change Bullet Color on Hover */
+.program-info li:hover::before {
+    background-color: #343a40;
+    /* Green bullet color on hover */
+}
+
+/* =======================================
+   Responsive Styling for Mobile Screens
+   ======================================= */
+@media (max-width: 768px) {
+    .program-info .row {
+        text-align: center;
+        /* Center text on mobile */
+    }
+
+    .program-info .col-md-6 {
+        margin-bottom: 20px;
+        /* Margin at the bottom of each column */
+    }
+
+    /* Adjust header size for mobile */
+    .program-info h3 {
+        font-size: 1.25rem;
+        /* Smaller font size for mobile */
+    }
+
+    /* Adjust list item font size for mobile */
+    .program-info li {
+        font-size: 1rem;
+        /* Smaller font size for mobile */
+    }
+}

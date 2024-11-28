@@ -1,0 +1,157 @@
+.eskul-title {
+    font-size: 2rem;
+    /* Ukuran font yang lebih besar */
+    font-weight: bold;
+    /* Membuat teks menjadi tebal */
+    color: #2980b9;
+    /* Warna biru yang menarik */
+    text-align: center;
+    /* Menyusun teks di tengah */
+    text-transform: uppercase;
+    /* Mengubah teks menjadi huruf kapital */
+    letter-spacing: 1px;
+    /* Jarak antar huruf */
+    margin-bottom: 1rem;
+    /* Jarak bawah untuk spasi dengan elemen di bawah */
+    border-bottom: 2px solid #3498db;
+    /* Garis bawah yang menambah daya tarik */
+    padding-bottom: 0.5rem;
+    /* Jarak antara teks dan garis bawah */
+    transition: color 0.3s ease;
+    /* Efek transisi untuk perubahan warna */
+    margin-top: 3rem;
+}
+
+.eskul-title:hover {
+    color: #f39c12;
+    /* Mengubah warna saat hover */
+    cursor: pointer;
+    /* Mengubah kursor saat hover */
+}
+
+/* Container */
+.ekskul-container {
+    padding: 2rem;
+    background: #f9fafb;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Kartu Ekskul */
+.ekskul-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.ekskul-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Ekskul */
+.ekskul-logo-container {
+    background: linear-gradient(145deg, #e0f7ff, #e0e7ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    border-radius: 12px 12px 0 0;
+}
+
+.ekskul-img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    border-radius: 12px 12px 0 0;
+}
+
+.ekskul-img:hover {
+    transform: scale(1.05);
+}
+
+/* Tidak Ada Logo */
+.ekskul-no-logo {
+    background: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    border-radius: 12px 12px 0 0;
+}
+
+.ekskul-no-logo-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #9ca3af;
+}
+
+/* Konten Kartu */
+.ekskul-card-body {
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ekskul-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.ekskul-description {
+    font-size: 0.9rem;
+    color: #4b5563;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Badge Jadwal */
+.ekskul-schedule {
+    margin-top: 1rem;
+}
+
+.ekskul-badge {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #2563eb, #1e40af);
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(30, 64, 175, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ekskul-badge:hover {
+    background: linear-gradient(145deg, #1e40af, #2563eb);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+    cursor: pointer;
+}
+
+/* Teks Saat Tidak Ada Data */
+.ekskul-no-info {
+    font-size: 1rem;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .ekskul-title {
+        font-size: 1.1rem;
+    }
+
+    .ekskul-description {
+        font-size: 0.85rem;
+    }
+
+    .ekskul-badge {
+        font-size: 0.8rem;
+    }
+}

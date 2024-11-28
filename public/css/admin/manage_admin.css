@@ -1,0 +1,516 @@
+/* Body */
+body {
+    height: 100vh;
+    background-image: url('https://smkn4bogor.sch.id/assets/images/background/smkn4bogor_2.jpg');
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s ease-in-out;
+}
+
+
+/* Wrapper */
+.flex.min-h-screen {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Sidebar */
+.w-64 {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background 0.3s ease;
+}
+
+.w-64:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Flex container for logos */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo SMKN 4 */
+.logo-smkn4 {
+    width: 55px;
+    height: 55px;
+    margin-right: 5px;
+}
+
+/* Garis pemisah antara logo */
+.separator {
+    border-left: 3px solid red;
+    height: 50px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Logo SMK BISA */
+.logo-smk-bisa {
+    width: 160px;
+    height: 50px;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    /* Font bergaya profesional */
+    font-size: 2.75rem;
+    /* Sedikit lebih besar untuk memberi penekanan */
+    font-weight: 600;
+    /* Sedikit lebih tebal tapi tidak terlalu bold */
+    color: #334E68;
+    /* Warna biru abu-abu gelap */
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Bayangan ringan */
+    letter-spacing: 0.3px;
+    /* Memberikan sedikit ruang antar huruf */
+    padding-bottom: 12px;
+    /* Jarak bawah agar terlihat teratur */
+    border-bottom: 2px solid rgba(51, 78, 104, 0.3);
+    /* Garis bawah tipis */
+    margin-bottom: 20px;
+}
+
+
+/* Secara default sembunyikan dropdown menu */
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(145deg, #f5f7fa, #e4e9f2);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Menampilkan dropdown saat hover dengan efek animasi */
+li.relative:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Menambahkan garis pemisah antar item */
+.dropdown-menu li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #888080;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+/* Mengubah background menjadi biru saat hover */
+.dropdown-menu li:hover {
+    transform: translateX(5px);
+
+    color: black;
+}
+
+/* Menambahkan efek garis bawah pada item yang dipilih */
+.dropdown-menu li:active {
+    border-bottom: 2px solid #0056b3;
+}
+
+/* Penyesuaian untuk tombol (Manage Profile) agar lebih menarik */
+li.relative button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li.relative:hover button {
+    background-color: #007BFF;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Styling untuk .menu-item */
+.menu-item {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 0.875rem;
+    /* Ukuran font lebih kecil */
+    font-weight: 700;
+    /* Menambah ketebalan */
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #007BFF;
+    color: white;
+    transform: translateX(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.admin_upload {
+    font-family: 'Roboto', sans-serif;
+    /* Menggunakan font Roboto yang modern dan bersih */
+    font-size: 2.5rem;
+    /* Ukuran font lebih besar untuk menarik perhatian */
+    color: #2B6CB0;
+    /* Warna biru cerah yang profesional */
+    font-weight: 800;
+    /* Font lebih tebal untuk kesan kuat */
+    text-align: center;
+    /* Membuat teks berada di tengah */
+    margin-bottom: 2rem;
+    /* Memberikan ruang bawah yang cukup */
+    letter-spacing: 1.2px;
+    /* Jarak antar huruf sedikit lebih lebar untuk kesan elegan */
+    text-transform: capitalize;
+    /* Menjaga kata tetap mudah dibaca */
+    position: relative;
+    line-height: 1.4;
+    /* Memberikan ruang antar baris agar tidak terlalu rapat */
+    transition: color 0.3s ease;
+    /* Efek transisi pada perubahan warna */
+}
+
+/* Gaya untuk Toast Sukses */
+.toast-success {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    /* Hijau */
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Gaya untuk Toast Error */
+.toast-error {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #dc3545;
+    /* Merah */
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Efek bayangan halus */
+}
+
+/* Toast tampil */
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+    /* Gerakan naik halus */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    /* Bayangan lebih dalam saat muncul */
+}
+
+/* Animasi untuk toast error hilang (dismissed) */
+.toast.hide {
+    opacity: 0;
+    transform: translateY(-50px);
+    /* Gerakan kembali ke atas */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Ikon untuk memperjelas error */
+.toast-error i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    /* Ukuran ikon lebih besar */
+    opacity: 0.8;
+    /* Sedikit transparan agar tidak terlalu dominan */
+}
+
+/* Menambahkan efek suara saat muncul */
+.toast-error.show {
+    animation: bounceInRight 0.8s ease-out;
+    /* Animasi bounce untuk muncul */
+}
+
+/* Animasi bounce toast error */
+@keyframes bounceInRight {
+    0% {
+        transform: translateX(100%);
+        /* Toast mulai dari luar layar */
+    }
+
+    60% {
+        transform: translateX(-10px);
+        /* Sedikit melampaui posisi semula */
+    }
+
+    80% {
+        transform: translateX(5px);
+        /* Kembali sedikit */
+    }
+
+    100% {
+        transform: translateX(0);
+        /* Kembali ke posisi semula */
+    }
+}
+
+
+/* Container form dengan animasi fade-in */
+.admin-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    /* Animasi fade-in */
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+    /* Menambahkan animasi fade-in dengan pergerakan ke bawah */
+}
+
+/* Animasi fade-in */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Judul form */
+.admin-form-container h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Grup form */
+.form-group {
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+/* Label */
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #4A5568;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+/* Input */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d2d6dc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #3182CE;
+    box-shadow: 0 0 8px rgba(49, 130, 206, 0.3);
+    outline: none;
+}
+
+/* Tombol Submit */
+.submit-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #3182CE;
+    border: none;
+    border-radius: 12px;
+    /* Border lebih melengkung */
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    /* Transisi lebih halus untuk efek */
+    box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
+    /* Bayangan lebih besar */
+    text-transform: uppercase;
+    /* Semua huruf kapital untuk tampilan lebih profesional */
+    letter-spacing: 1px;
+    /* Jarak antar huruf sedikit lebih lebar */
+}
+
+/* Efek hover pada tombol */
+.submit-btn:hover {
+    background-color: #2B6CB0;
+    transform: translateY(-4px);
+    /* Efek naik sedikit lebih besar */
+    box-shadow: 0 8px 20px rgba(49, 130, 206, 0.4);
+    /* Bayangan lebih dalam dan besar */
+}
+
+/* Efek saat tombol ditekan */
+.submit-btn:active {
+    transform: translateY(0);
+    /* Mengembalikan tombol ke posisi semula */
+    box-shadow: 0 4px 10px rgba(49, 130, 206, 0.2);
+    /* Bayangan sedikit lebih kecil */
+}
+
+
+/* Gaya untuk Daftar Admin */
+/* Styling untuk Judul */
+.admin-title {
+    font-size: 1.5rem;
+    color: #4A5568;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #E2E8F0;
+    padding-bottom: 10px;
+}
+
+/* Styling untuk Daftar Admin */
+.admin-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid #E2E8F0;
+    transition: background-color 0.3s ease;
+}
+
+.admin-item:hover {
+    background-color: #F7FAFC;
+}
+
+/* Styling Nama dan Email Admin */
+.admin-name {
+    font-size: 1.125rem;
+    color: #2D3748;
+    font-weight: 500;
+}
+
+.admin-email {
+    color: #718096;
+    margin-left: 8px;
+    font-size: 0.9rem;
+}
+
+/* Styling untuk Tombol Edit dan Hapus */
+.admin-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Gaya umum untuk tombol Edit dan Hapus */
+.edit-btn,
+.delete-btn {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 30px;
+    /* Membuat tombol lebih membulat */
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    color: #FFFFFF;
+    /* Warna teks */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    /* Bayangan lembut */
+    position: relative;
+    /* Untuk efek overlay */
+    overflow: hidden;
+    /* Agar efek overlay tetap di dalam tombol */
+}
+
+/* Tombol Edit */
+.edit-btn {
+    background: linear-gradient(135deg, #3182CE, #63B3ED);
+    /* Gradient warna dasar */
+    border: none;
+}
+
+.edit-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.15);
+    /* Overlay putih semi-transparan */
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.edit-btn:hover::before {
+    opacity: 1;
+}
+
+.edit-btn:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    /* Bayangan yang lebih dalam saat hover */
+    transform: scale(1.05);
+    /* Sedikit membesar */
+}
+
+/* Tombol Hapus */
+.delete-btn {
+    background: linear-gradient(135deg, #E53E3E, #F56565);
+    border: none;
+}
+
+.delete-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.15);
+    /* Overlay putih semi-transparan */
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.delete-btn:hover::before {
+    opacity: 1;
+}
+
+.delete-btn:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* Tampilan formulir penghapusan */
+.delete-form {
+    display: inline;
+    margin: 0;
+}

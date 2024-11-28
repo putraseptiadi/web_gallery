@@ -1,0 +1,108 @@
+/* Visi dan Misi Style */
+
+
+
+.visi,
+.misi {
+    background-color: #f9fafb;
+    /* Warna latar belakang lebih soft */
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    /* Sudut melengkung lebih halus */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Bayangan lebih lembut */
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Efek animasi halus */
+}
+
+.visi:hover,
+.misi:hover {
+    transform: scale(1.02);
+    /* Sedikit memperbesar card saat dihover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Bayangan lebih besar saat hover */
+}
+
+.visi h2,
+.misi h2 {
+    font-weight: bold;
+    color: #333;
+    /* Ganti warna teks dengan warna yang lebih gelap dan seragam */
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.visi h2::after,
+.misi h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #333;
+    /* Garis bawah untuk judul, disamakan dengan warna teks */
+    margin: 10px auto 0;
+    /* Garis di bawah judul */
+}
+
+.visi p,
+.misi p {
+    line-height: 1.8;
+    /* Jarak antar baris lebih luas */
+    text-align: justify;
+    color: #555;
+    /* Warna teks lebih lembut untuk kontras */
+}
+
+.misi ul {
+    padding-left: 20px;
+}
+
+.misi ul li {
+    margin-bottom: 10px;
+}
+
+.judul-sekolah {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    /* Warna teks judul sekolah */
+    margin-bottom: 10px;
+    transition: font-size 0.3s ease;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .judul-sekolah {
+        font-size: 2rem;
+        /* Ukuran font pada perangkat lebih kecil */
+        padding: 10px 20px;
+    }
+
+    .visi,
+    .misi {
+        padding: 20px;
+        /* Padding yang lebih kecil di perangkat kecil */
+    }
+}
+
+/*Akhir visi*/
+
+
+/*border judul*/
+.section-title {
+    background-image: url('https://smkn4bogor.sch.id/assets/images/background/smkn4bogor_2.jpg');
+    /* Ganti dengan path gambar yang sesuai */
+    background-size: cover;
+    /* Mengisi seluruh area */
+    background-position: center;
+    /* Memusatkan gambar */
+    padding: 50px 0;
+    /* Padding untuk memberikan ruang di atas dan bawah */
+    color: white;
+    /* Warna teks judul */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Bayangan teks untuk keterbacaan */
+}

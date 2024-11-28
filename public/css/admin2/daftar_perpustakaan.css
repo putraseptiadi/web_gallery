@@ -1,0 +1,298 @@
+/* Body */
+body {
+    height: 100vh;
+    background-image: url('https://smkn4bogor.sch.id/assets/images/background/smkn4bogor_2.jpg');
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s ease-in-out;
+}
+
+
+/* Wrapper */
+.flex.min-h-screen {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Sidebar */
+.w-64 {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background 0.3s ease;
+}
+
+.w-64:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Flex container for logos */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo SMKN 4 */
+.logo-smkn4 {
+    width: 55px;
+    height: 55px;
+    margin-right: 5px;
+}
+
+/* Garis pemisah antara logo */
+.separator {
+    border-left: 3px solid red;
+    height: 50px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Logo SMK BISA */
+.logo-smk-bisa {
+    width: 160px;
+    height: 50px;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    /* Font bergaya profesional */
+    font-size: 2.75rem;
+    /* Sedikit lebih besar untuk memberi penekanan */
+    font-weight: 600;
+    /* Sedikit lebih tebal tapi tidak terlalu bold */
+    color: #334E68;
+    /* Warna biru abu-abu gelap */
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Bayangan ringan */
+    letter-spacing: 0.3px;
+    /* Memberikan sedikit ruang antar huruf */
+    padding-bottom: 12px;
+    /* Jarak bawah agar terlihat teratur */
+    border-bottom: 2px solid rgba(51, 78, 104, 0.3);
+    /* Garis bawah tipis */
+    margin-bottom: 20px;
+}
+
+
+/* Secara default sembunyikan dropdown menu */
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(145deg, #f5f7fa, #e4e9f2);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Menampilkan dropdown saat hover dengan efek animasi */
+li.relative:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Menambahkan garis pemisah antar item */
+.dropdown-menu li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #888080;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+/* Mengubah background menjadi biru saat hover */
+.dropdown-menu li:hover {
+    transform: translateX(5px);
+
+    color: black;
+}
+
+/* Menambahkan efek garis bawah pada item yang dipilih */
+.dropdown-menu li:active {
+    border-bottom: 2px solid #0056b3;
+}
+
+/* Penyesuaian untuk tombol (Manage Profile) agar lebih menarik */
+li.relative button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li.relative:hover button {
+    background-color: #007BFF;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Styling untuk .menu-item */
+.menu-item {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 0.875rem;
+    /* Ukuran font lebih kecil */
+    font-weight: 700;
+    /* Menambah ketebalan */
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #007BFF;
+    color: white;
+    transform: translateX(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk tombol Kembali */
+a.text-blue-600 {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.1rem;
+    /* Ukuran font sedikit lebih besar */
+    font-weight: 600;
+    /* Menambah ketebalan font */
+    color: #3b82f6;
+    /* Warna biru terang */
+    text-decoration: none;
+    /* Menghapus garis bawah */
+    padding: 8px 16px;
+    border-radius: 8px;
+    /* Membuat sudut tombol lebih bulat */
+    transition: all 0.3s ease;
+    /* Menambahkan transisi yang halus */
+}
+
+/* Efek hover pada tombol */
+a.text-blue-600:hover {
+    color: #2563eb;
+    /* Warna biru gelap saat hover */
+    background-color: rgba(59, 130, 246, 0.1);
+    /* Efek background biru muda */
+    transform: translateX(-5px);
+    /* Menambahkan efek geser sedikit ke kiri */
+}
+
+/* Efek pada ikon */
+a.text-blue-600 svg {
+    transition: transform 0.3s ease;
+    /* Transisi halus pada ikon */
+}
+
+/* Efek saat hover pada ikon */
+a.text-blue-600:hover svg {
+    transform: translateX(-3px);
+    /* Ikon bergerak sedikit ke kiri */
+}
+
+/* General Table Style for Custom Table */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0;
+    color: #2c3e50;
+    text-align: left;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+/* Header Styling */
+.custom-table th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Row Styling */
+.custom-table tr {
+    transition: background-color 0.3s;
+}
+
+.custom-table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.custom-table tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* Table Data Styling */
+.custom-table td img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.custom-table td {
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/* Button Styling Specific to Custom Table */
+.custom-table a,
+.custom-table button {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Edit Button */
+.custom-table a[href*="edit"] {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+}
+
+.custom-table a[href*="edit"]:hover {
+    background-color: #e0a800;
+}
+
+/* Delete Button */
+.custom-table button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.custom-table button:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Styling for Custom Table */
+@media (max-width: 768px) {
+    .custom-table {
+        font-size: 12px;
+    }
+
+    .custom-table th,
+    .custom-table td {
+        padding: 8px 10px;
+    }
+
+    .custom-table td img {
+        width: 80px;
+    }
+
+    .custom-table a,
+    .custom-table button {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}

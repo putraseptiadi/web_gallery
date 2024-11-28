@@ -1,0 +1,361 @@
+/* Body */
+body {
+    height: 100vh;
+    background-image: url('https://smkn4bogor.sch.id/assets/images/background/smkn4bogor_2.jpg');
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s ease-in-out;
+}
+
+
+/* Wrapper */
+.flex.min-h-screen {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Sidebar */
+.w-64 {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background 0.3s ease;
+}
+
+.w-64:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Flex container for logos */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo SMKN 4 */
+.logo-smkn4 {
+    width: 55px;
+    height: 55px;
+    margin-right: 5px;
+}
+
+/* Garis pemisah antara logo */
+.separator {
+    border-left: 3px solid red;
+    height: 50px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Logo SMK BISA */
+.logo-smk-bisa {
+    width: 160px;
+    height: 50px;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    /* Font bergaya profesional */
+    font-size: 2.75rem;
+    /* Sedikit lebih besar untuk memberi penekanan */
+    font-weight: 600;
+    /* Sedikit lebih tebal tapi tidak terlalu bold */
+    color: #334E68;
+    /* Warna biru abu-abu gelap */
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Bayangan ringan */
+    letter-spacing: 0.3px;
+    /* Memberikan sedikit ruang antar huruf */
+    padding-bottom: 12px;
+    /* Jarak bawah agar terlihat teratur */
+    border-bottom: 2px solid rgba(51, 78, 104, 0.3);
+    /* Garis bawah tipis */
+    margin-bottom: 20px;
+}
+
+
+/* Secara default sembunyikan dropdown menu */
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(145deg, #f5f7fa, #e4e9f2);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Menampilkan dropdown saat hover dengan efek animasi */
+li.relative:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Menambahkan garis pemisah antar item */
+.dropdown-menu li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #888080;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+/* Mengubah background menjadi biru saat hover */
+.dropdown-menu li:hover {
+    transform: translateX(5px);
+
+    color: black;
+}
+
+/* Menambahkan efek garis bawah pada item yang dipilih */
+.dropdown-menu li:active {
+    border-bottom: 2px solid #0056b3;
+}
+
+/* Penyesuaian untuk tombol (Manage Profile) agar lebih menarik */
+li.relative button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li.relative:hover button {
+    background-color: #007BFF;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Styling untuk .menu-item */
+.menu-item {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 0.875rem;
+    /* Ukuran font lebih kecil */
+    font-weight: 700;
+    /* Menambah ketebalan */
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #007BFF;
+    color: white;
+    transform: translateX(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk tombol Kembali */
+a.text-blue-600 {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.1rem;
+    /* Ukuran font sedikit lebih besar */
+    font-weight: 600;
+    /* Menambah ketebalan font */
+    color: #3b82f6;
+    /* Warna biru terang */
+    text-decoration: none;
+    /* Menghapus garis bawah */
+    padding: 8px 16px;
+    border-radius: 8px;
+    /* Membuat sudut tombol lebih bulat */
+    transition: all 0.3s ease;
+    /* Menambahkan transisi yang halus */
+}
+
+/* Efek hover pada tombol */
+a.text-blue-600:hover {
+    color: #2563eb;
+    /* Warna biru gelap saat hover */
+    background-color: rgba(59, 130, 246, 0.1);
+    /* Efek background biru muda */
+    transform: translateX(-5px);
+    /* Menambahkan efek geser sedikit ke kiri */
+}
+
+/* Efek pada ikon */
+a.text-blue-600 svg {
+    transition: transform 0.3s ease;
+    /* Transisi halus pada ikon */
+}
+
+/* Efek saat hover pada ikon */
+a.text-blue-600:hover svg {
+    transform: translateX(-3px);
+    /* Ikon bergerak sedikit ke kiri */
+}
+
+/* Section Styling */
+.program-info {
+    background-color: #f9f9f9;
+    /* Warna abu terang */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.program-info:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Heading Styling */
+.program-info h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.program-info h3 i {
+    margin-right: 10px;
+}
+
+/* Form Styling */
+.form-bg {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.program-info .form-group {
+    margin-bottom: 15px;
+}
+
+.program-info .form-control {
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-info .form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.25);
+}
+
+.profesi_btn[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.profesi_btn[type="submit"]:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.prestasi_btn[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.prestasi_btn[type="submit"]:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.table td {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #343a40;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+}
+
+.table-striped tbody tr:hover {
+    background-color: #e9ecef;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Button Styling */
+.btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .program-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .table {
+        font-size: 0.85rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}

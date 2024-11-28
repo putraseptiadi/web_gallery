@@ -1,0 +1,257 @@
+/* Body */
+body {
+    height: 100vh;
+    background-image: url('https://smkn4bogor.sch.id/assets/images/background/smkn4bogor_2.jpg');
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s ease-in-out;
+}
+
+
+/* Wrapper */
+.flex.min-h-screen {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Sidebar */
+.w-64 {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background 0.3s ease;
+}
+
+.w-64:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Flex container for logos */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo SMKN 4 */
+.logo-smkn4 {
+    width: 55px;
+    height: 55px;
+    margin-right: 5px;
+}
+
+/* Garis pemisah antara logo */
+.separator {
+    border-left: 3px solid red;
+    height: 50px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Logo SMK BISA */
+.logo-smk-bisa {
+    width: 160px;
+    height: 50px;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    /* Font bergaya profesional */
+    font-size: 2.75rem;
+    /* Sedikit lebih besar untuk memberi penekanan */
+    font-weight: 600;
+    /* Sedikit lebih tebal tapi tidak terlalu bold */
+    color: #334E68;
+    /* Warna biru abu-abu gelap */
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Bayangan ringan */
+    letter-spacing: 0.3px;
+    /* Memberikan sedikit ruang antar huruf */
+    padding-bottom: 12px;
+    /* Jarak bawah agar terlihat teratur */
+    border-bottom: 2px solid rgba(51, 78, 104, 0.3);
+    /* Garis bawah tipis */
+    margin-bottom: 20px;
+}
+
+
+/* Secara default sembunyikan dropdown menu */
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(145deg, #f5f7fa, #e4e9f2);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Menampilkan dropdown saat hover dengan efek animasi */
+li.relative:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Menambahkan garis pemisah antar item */
+.dropdown-menu li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #888080;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+/* Mengubah background menjadi biru saat hover */
+.dropdown-menu li:hover {
+    transform: translateX(5px);
+
+    color: black;
+}
+
+/* Menambahkan efek garis bawah pada item yang dipilih */
+.dropdown-menu li:active {
+    border-bottom: 2px solid #0056b3;
+}
+
+/* Penyesuaian untuk tombol (Manage Profile) agar lebih menarik */
+li.relative button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li.relative:hover button {
+    background-color: #007BFF;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Styling untuk .menu-item */
+.menu-item {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 0.875rem;
+    /* Ukuran font lebih kecil */
+    font-weight: 700;
+    /* Menambah ketebalan */
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #007BFF;
+    color: white;
+    transform: translateX(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f0f8ff;
+    /* Biru muda */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Efek hover pada form */
+form:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Styling untuk label */
+label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    /* Biru gelap */
+    display: block;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+/* Styling untuk input text dan file */
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #1e3a8a;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 16px;
+    /* Jarak antar input */
+}
+
+/* Efek fokus pada input */
+input[type="text"]:focus,
+input[type="file"]:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+/* Styling untuk tombol submit */
+button[type="submit"] {
+    background-color: #3b82f6;
+    /* Biru terang */
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.2);
+    margin-top: 16px;
+    /* Memberi jarak pada tombol */
+}
+
+button[type="submit"]:hover {
+    background-color: #2563eb;
+    transform: translateY(-3px);
+}
+
+button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+/* Styling untuk tombol Kembali */
+a.text-blue-600 {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3b82f6;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Efek hover pada tombol */
+a.text-blue-600:hover {
+    color: #2563eb;
+    background-color: rgba(59, 130, 246, 0.1);
+    transform: translateX(5px);
+    /* Geser sedikit ke kanan */
+}
+
+/* Efek pada ikon */
+a.text-blue-600 svg {
+    transition: transform 0.3s ease;
+}
+
+/* Efek saat hover pada ikon */
+a.text-blue-600:hover svg {
+    transform: translateX(3px);
+    /* Geser ikon sedikit ke kanan */
+}

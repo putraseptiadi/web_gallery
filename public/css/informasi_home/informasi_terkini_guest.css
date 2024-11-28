@@ -1,0 +1,154 @@
+.Infor-title {
+    font-size: 2rem;
+    /* Ukuran font yang lebih besar */
+    font-weight: bold;
+    /* Membuat teks menjadi tebal */
+    color: #2980b9;
+    /* Warna biru yang menarik */
+    text-align: center;
+    /* Menyusun teks di tengah */
+    text-transform: uppercase;
+    /* Mengubah teks menjadi huruf kapital */
+    letter-spacing: 1px;
+    /* Jarak antar huruf */
+    margin-bottom: 1rem;
+    /* Jarak bawah untuk spasi dengan elemen di bawah */
+    border-bottom: 2px solid #3498db;
+    /* Garis bawah yang menambah daya tarik */
+    padding-bottom: 0.5rem;
+    /* Jarak antara teks dan garis bawah */
+    transition: color 0.3s ease;
+    /* Efek transisi untuk perubahan warna */
+    margin-top: 3rem;
+}
+
+.Infor-title:hover {
+    color: #f39c12;
+    /* Mengubah warna saat hover */
+    cursor: pointer;
+    /* Mengubah kursor saat hover */
+}
+
+/* Container untuk Informasi */
+.informasi-terkini {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+/* Item Informasi */
+.informasi-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Hover Effect untuk Item Informasi */
+.informasi-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul Informasi */
+.informasi-item h3 {
+    font-size: 1.5rem;
+    /* Ukuran lebih besar */
+    font-weight: 700;
+    /* Lebih tegas */
+    color: #007bff;
+    /* Warna utama */
+    margin-bottom: 20px;
+    /* Jarak lebih lapang */
+    position: relative;
+    text-transform: capitalize;
+    /* Huruf kapital awal kata */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Efek transisi */
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    /* Efek gradasi warna */
+    -webkit-background-clip: text;
+    /* Efek teks gradasi */
+    -webkit-text-fill-color: transparent;
+    /* Teks transparan */
+    text-align: center;
+    cursor: pointer;
+    /* Memberikan pointer untuk interaktivitas */
+}
+
+/* Efek Hover pada Judul */
+.informasi-item h3:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+    /* Sedikit pembesaran */
+    background: linear-gradient(90deg, #0056b3, #003f7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    /* Bayangan teks */
+}
+
+/* Elemen Dekoratif (Garis di Bawah Judul) */
+.informasi-item h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    /* Panjang garis */
+    height: 3px;
+    /* Ketebalan garis */
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    /* Gradasi garis */
+    margin: 10px auto 0;
+    /* Posisikan di tengah */
+    transition: all 0.3s ease;
+}
+
+/* Efek Hover pada Garis */
+.informasi-item h3:hover::after {
+    width: 100px;
+    /* Panjang garis bertambah */
+    background: linear-gradient(90deg, #0056b3, #003f7f);
+    /* Warna gradasi berubah */
+}
+
+
+/* Instagram Embed */
+.informasi-item .instagram-media {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Link Instagram */
+.informasi-item .instagram-media a {
+    color: #007bff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.informasi-item .instagram-media a:hover {
+    color: #0056b3;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .informasi-item h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .informasi-item {
+        padding: 10px;
+    }
+}

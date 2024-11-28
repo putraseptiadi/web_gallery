@@ -1,0 +1,122 @@
+.agenda-title {
+    font-size: 2rem;
+    /* Ukuran font yang lebih besar */
+    font-weight: bold;
+    /* Membuat teks menjadi tebal */
+    color: #2980b9;
+    /* Warna biru yang menarik */
+    text-align: center;
+    /* Menyusun teks di tengah */
+    text-transform: uppercase;
+    /* Mengubah teks menjadi huruf kapital */
+    letter-spacing: 1px;
+    /* Jarak antar huruf */
+    margin-bottom: 2rem;
+    /* Jarak bawah untuk spasi dengan elemen di bawah */
+    border-bottom: 2px solid #3498db;
+    /* Garis bawah yang menambah daya tarik */
+    padding-bottom: 0.5rem;
+    /* Jarak antara teks dan garis bawah */
+    transition: color 0.3s ease;
+    /* Efek transisi untuk perubahan warna */
+}
+
+.agenda-title:hover {
+    color: #f39c12;
+    /* Mengubah warna saat hover */
+    cursor: pointer;
+    /* Mengubah kursor saat hover */
+}
+
+/* Container Utama untuk Agenda */
+.agendaa {
+    display: flex;
+    justify-content: center;
+    /* Mengatur konten agar berada di tengah secara horizontal */
+    align-items: flex-start;
+    /* Membiarkan item berada di bagian atas */
+    flex-direction: column;
+    margin: 0 auto;
+    /* Margin kiri dan kanan otomatis */
+    max-width: 1200px;
+    /* Membatasi lebar maksimal agar tidak terlalu melebar */
+    padding: 2rem;
+}
+
+/* Pengaturan Flex untuk Item Agenda */
+.agenda-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-left: 5px solid #2980b9;
+    background: linear-gradient(90deg, #ffffff, #f7f9fc);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    /* Menyesuaikan dengan lebar container */
+    max-width: 900px;
+    /* Lebar maksimal untuk setiap item agenda */
+    margin-left: auto;
+    margin-right: auto;
+    /* Mengatur item berada di tengah secara horizontal */
+}
+
+/* Efek Hover pada Agenda */
+.agenda-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Tanggal Agenda */
+.agenda-date {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #2980b9;
+    margin-right: 1.5rem;
+    text-align: center;
+    flex-shrink: 0;
+    background-color: #eaf6fc;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Detail Agenda */
+.agenda-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Judul Agenda */
+.agenda-details strong {
+    font-size: 1.4rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+/* Deskripsi Agenda */
+.agenda-details p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin: 0.2rem 0;
+    line-height: 1.6;
+}
+
+/* Lokasi Agenda */
+.agenda-details p:last-child {
+    font-weight: bold;
+    color: #2980b9;
+    font-size: 1.1rem;
+}
+
+/* Ikon Dekoratif */
+.agenda-item::before {
+    content: "\1F4C5";
+    font-size: 2rem;
+    color: #2980b9;
+    margin-right: 1rem;
+}

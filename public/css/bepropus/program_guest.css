@@ -1,0 +1,472 @@
+.lowongan-judul {
+    font-size: 2rem;
+    /* Ukuran font yang lebih besar */
+    font-weight: bold;
+    /* Membuat teks menjadi tebal */
+    color: #2980b9;
+    /* Warna biru yang menarik */
+    text-align: center;
+    /* Menyusun teks di tengah */
+    text-transform: uppercase;
+    /* Mengubah teks menjadi huruf kapital */
+    letter-spacing: 1px;
+    /* Jarak antar huruf */
+    margin-bottom: 1rem;
+    /* Jarak bawah untuk spasi dengan elemen di bawah */
+    border-bottom: 2px solid #3498db;
+    /* Garis bawah yang menambah daya tarik */
+    padding-bottom: 0.5rem;
+    /* Jarak antara teks dan garis bawah */
+    transition: color 0.3s ease;
+    /* Efek transisi untuk perubahan warna */
+    margin-top: 3rem;
+}
+
+.lowongan-judul:hover {
+    color: #f39c12;
+    /* Mengubah warna saat hover */
+    cursor: pointer;
+    /* Mengubah kursor saat hover */
+}
+
+
+/* Filter Section */
+.job-filter {
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px;
+    background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.job-filter:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.search-filter {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.search-bar {
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    width: 65%;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border 0.3s ease, transform 0.3s ease;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.search-bar:focus {
+    border-color: #3498db;
+    transform: scale(1.05);
+}
+
+.filter-select {
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.filter-select:hover,
+.filter-select:focus {
+    border-color: #3498db;
+    background-color: #ecf0f1;
+}
+
+/* Additional Styles for Modern Look */
+.job-filter .search-bar::placeholder {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.filter-select option {
+    padding: 10px;
+    font-weight: 600;
+}
+
+.filter-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"%3E%3Cpath fill="none" stroke="%23BDC3C7" stroke-width="2" d="M1 4l7 7 7-7"%3E%3C/path%3E%3C/svg%3E');
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+}
+
+.search-filter input,
+.search-filter select {
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .job-filter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-filter {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar,
+    .filter-select {
+        width: 100%;
+    }
+}
+
+/* Job List Section */
+.job-list {
+    width: 85%;
+    margin: 60px auto;
+    padding: 40px;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border: 1px solid #d1d8e0;
+}
+
+
+.job-list h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Job Card Container */
+.job-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+/* Job Card */
+.job-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dfe6e9;
+}
+
+.job-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid #3498db;
+}
+
+/* Card Header */
+.card-header {
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.job-title {
+    font-size: 1.4rem;
+    margin: 0;
+    color: #ecf0f1;
+}
+
+.company-name {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    font-weight: 600;
+    color: #bdc3c7;
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+    background-color: #fafafa;
+    flex-grow: 1;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.job-description {
+    font-size: 1rem;
+    color: #34495e;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.job-location,
+.job-deadline {
+    font-size: 0.95rem;
+    color: #7f8c8d;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.job-location::before,
+.job-deadline::before {
+    content: '📍';
+    margin-right: 8px;
+    color: #3498db;
+    font-size: 1.1rem;
+}
+
+/* Card Footer */
+.card-footer {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(145deg, #ffffff, #ecf0f1);
+    /* Gradasi yang lebih lembut */
+    border-top: 2px solid #bdc3c7;
+    /* Garis pemisah */
+    border-radius: 0 0 8px 8px;
+    /* Tambahkan sudut melengkung */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-footer:hover {
+    background-color: #e3e9ed;
+    /* Memberikan efek hover lembut */
+    transform: scale(1.02);
+    /* Efek mengangkat card */
+}
+
+/* Apply Button */
+.apply-btn {
+    padding: 12px 30px;
+    background: linear-gradient(90deg, #6dd5ed, #2193b0);
+    /* Gradasi biru modern */
+    border: none;
+    color: white;
+    border-radius: 25px;
+    /* Bentuk oval */
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Efek bayangan */
+}
+
+.apply-btn:hover {
+    background: linear-gradient(90deg, #2193b0, #6dd5ed);
+    /* Balik gradasi saat hover */
+    transform: translateY(-3px);
+    /* Efek tombol naik saat hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    /* Bayangan lebih intens */
+}
+
+.apply-btn:active {
+    transform: translateY(1px);
+    /* Tombol turun sedikit saat diklik */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .card-footer {
+        padding: 15px;
+    }
+
+    .apply-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .job-filter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar,
+    .filter-select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .jobs-title {
+        font-size: 2.5rem;
+    }
+
+    .job-cards {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 15px;
+    }
+
+    .job-card {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card-footer {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .jobs-title {
+        font-size: 2rem;
+    }
+
+    .search-bar {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    .filter-select {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .apply-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Lebih gelap untuk efek fokus */
+    backdrop-filter: blur(5px);
+    /* Tambahkan efek blur */
+}
+
+/* Modal Content */
+.modal-content {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    /* Efek gradasi modern */
+    margin: 10% auto;
+    padding: 20px 30px;
+    border: none;
+    width: 60%;
+    /* Lebih kecil agar fokus pada konten */
+    max-width: 700px;
+    /* Batasi ukuran maksimal */
+    border-radius: 16px;
+    /* Lebih bulat */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 6px 6px rgba(0, 0, 0, 0.22);
+    /* Shadow lebih lembut */
+    position: relative;
+    animation: slideDown 0.3s ease-out;
+    /* Efek animasi muncul */
+}
+
+/* Close Button */
+.close-btn {
+    color: #333;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #e74c3c;
+    /* Warna merah untuk indikasi */
+    transform: rotate(90deg);
+    /* Efek rotasi */
+    text-decoration: none;
+}
+
+/* Header Section in Modal */
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* Paragraphs and Lists */
+.modal-content p,
+.modal-content ul {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.modal-content ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        padding: 15px 20px;
+    }
+
+    .modal-content h2 {
+        font-size: 20px;
+    }
+
+    .modal-content p {
+        font-size: 14px;
+    }
+}

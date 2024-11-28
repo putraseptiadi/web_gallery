@@ -1,0 +1,328 @@
+/* Gaya untuk Navbar */
+.navbar {
+    background-color: white;
+    /* Latar belakang navbar */
+    padding: 10px 20px;
+    /* Padding untuk navbar */
+}
+
+/* Logo SMKN 4 */
+.logo-smkn4 {
+    width: 55px;
+    /* Lebar untuk logo SMKN 4 */
+    height: 65px;
+    /* Tinggi untuk logo SMKN 4 */
+    margin-right: 5px;
+    /* Jarak antara logo */
+}
+
+/* Garis pemisah antara logo */
+.separator {
+    border-left: 3px solid red;
+    /* Garis pemisah merah di sebelah kiri */
+    height: 65px;
+    /* Tinggi untuk garis pemisah */
+    display: inline-block;
+    /* Memungkinkan penggunaan margin dan perataan vertikal */
+    vertical-align: middle;
+    /* Menyelaraskan secara vertikal dengan logo */
+    margin-right: 5px;
+    /* Jarak antara garis pemisah dan logo SMK BISA */
+}
+
+/* Logo SMK BISA */
+.logo-smk-bisa {
+    width: 160px;
+    /* Lebar untuk logo SMK BISA */
+    height: 50px;
+    /* Tinggi untuk logo SMK BISA */
+    vertical-align: middle;
+    /* Menyelaraskan secara vertikal */
+}
+
+
+
+/* Gaya untuk tautan di navbar */
+.navbar-nav .nav-item .nav-link {
+    color: #000000;
+    /* Warna default untuk tautan */
+    transition: color 0.3s ease;
+    /* Efek transisi untuk perubahan warna */
+    text-decoration: none;
+    /* Menghilangkan garis bawah pada tautan */
+    font-weight: bold;
+    margin: 0 6px;
+    /* Jarak horizontal antara tautan (6px di kiri dan kanan) */
+}
+
+/* Gaya untuk tautan aktif */
+.navbar-nav .nav-item .nav-link.active {
+    color: blue;
+    /* Warna biru untuk tautan aktif */
+    font-weight: bold;
+    /* Menebalkan teks tautan aktif */
+}
+
+/* Gaya untuk item dropdown yang aktif */
+.nav-item .dropdown-item.active {
+    font-weight: bold;
+    /* Menebalkan teks tautan aktif */
+    color: blue;
+    /* Warna teks aktif */
+    background-color: white;
+    /* Warna latar untuk item aktif */
+}
+
+/* Gaya dropdown */
+.nav-item .dropdown-menu {
+    background-color: white;
+    /* Warna latar dropdown */
+    border: none;
+    /* Menghilangkan garis border */
+    padding: 0;
+    /* Padding untuk dropdown */
+    display: none;
+    /* Menyembunyikan dropdown secara default */
+    position: absolute;
+    /* Menempatkan dropdown secara absolut */
+    z-index: 1000;
+    /* Memastikan dropdown muncul di atas elemen lainnya */
+    border-bottom: 2px solid #0a0e11;
+    /* Garis bawah yang menambah daya tarik */
+}
+
+/* Menampilkan dropdown saat hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    /* Menampilkan dropdown saat hover */
+}
+
+/* Gaya untuk item dropdown */
+.nav-item .dropdown-item {
+    color: black;
+    /* Warna teks dropdown */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transisi untuk perubahan warna */
+    padding: 10px 15px;
+    /* Padding untuk item dropdown */
+}
+
+/* Efek hover untuk item dropdown */
+.nav-item .dropdown-item:hover {
+    background-color: rgb(219, 223, 228);
+    /* Warna latar belakang saat hover */
+}
+
+/* login */
+.nav-item a.login {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #1e90ff;
+    /* Warna biru kekinian */
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Bayangan untuk efek elevasi */
+}
+
+.nav-item a.login:hover {
+    background-color: #1c86ee;
+    /* Biru lebih gelap saat hover */
+    transform: translateY(-3px);
+    /* Efek tombol sedikit terangkat */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    /* Memperbesar bayangan saat hover */
+}
+
+.nav-item a.login:active {
+    transform: translateY(0);
+    /* Kembali ke posisi semula saat ditekan */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Bayangan kembali ke posisi semula */
+}
+
+/* akhir navbar */
+
+
+
+
+
+/* Bagian peta */
+
+.peta_tentang_kami {
+    display: flex;
+    flex-wrap: wrap;
+    /* Membuat item bisa membungkus jika ruang tidak cukup */
+    border-collapse: collapse;
+    background: linear-gradient(-45deg, #4facfe, #00f2fe, #00c6ff, #0072ff);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* Bayangan lebih dalam */
+
+    overflow: hidden;
+    width: 100%;
+
+    padding: 20px;
+}
+
+.peta_tentang_kami td {
+    flex: 1;
+    vertical-align: top;
+    padding: 20px;
+    position: relative;
+
+}
+
+
+.peta_tentang_kami h2 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 2rem;
+    /* Ukuran font lebih besar */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Bayangan lebih tebal */
+}
+
+.peta_tentang_kami p {
+    line-height: 1.8;
+    /* Meningkatkan jarak antar baris */
+    color: #f0f0f0;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Bayangan lebih tebal */
+}
+
+.peta_tentang_kami iframe {
+
+    max-width: 350px;
+    /* Batas maksimum */
+    height: 250px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.peta_tentang_kami iframe:hover {
+    transform: scale(1.05);
+    /* Efek zoom lebih besar */
+}
+
+@media (max-width: 768px) {
+    .peta_tentang_kami {
+        flex-direction: column;
+        /* Mengatur kolom menjadi vertikal */
+    }
+
+    .peta_tentang_kami td {
+        width: 100%;
+        /* Setiap kolom mengambil 100% lebar */
+        display: block;
+        /* Kolom menjadi blok untuk tampilan vertikal */
+        margin-bottom: 20px;
+        /* Memberikan jarak antar kolom */
+        margin: 0;
+        /* Hapus margin pada tampilan vertikal */
+    }
+}
+
+.informasi-kontak {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.informasi-kontak h2 {
+    color: #fff;
+}
+
+.informasi-kontak p {
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.ig-link {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ig-link:hover {
+    color: #4facfe;
+}
+
+.ig-link i {
+    margin-right: 5px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/* Akhir peta */
+
+
+/* Footer Styles */
+.footer {
+    background-color: #34495e;
+    /* Warna latar belakang yang lebih gelap */
+    color: white;
+    padding: 10px 20px;
+    /* Menambahkan padding untuk ruang lebih */
+    font-family: 'Arial', sans-serif;
+    /* Menggunakan font yang lebih bersih */
+}
+
+.footer h5 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    /* Ukuran font lebih besar */
+    border-bottom: 2px solid #f0db4f;
+    /* Garis bawah untuk menambah fokus */
+    padding-bottom: 10px;
+    /* Ruang di bawah judul */
+}
+
+.footer p {
+    margin: 0;
+    line-height: 1.6;
+    /* Menambahkan jarak antar baris */
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 15px;
+    /* Jarak yang lebih besar antar item */
+}
+
+.footer ul li a {
+    color: #f0db4f;
+    /* Warna teks */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Transisi warna dan transformasi */
+}
+
+.footer ul li a:hover {
+    color: #e67e22;
+    /* Warna saat hover */
+    transform: translateY(-2px);
+    /* Efek angkat saat hover */
+}
+
+.footer .text-center {
+    margin-top: 30px;
+    /* Jarak yang lebih besar di atas teks tengah */
+    font-size: 0.9em;
+    /* Ukuran font lebih kecil untuk teks tambahan */
+    opacity: 0.8;
+    /* Menambahkan transparansi untuk teks tambahan */
+}
